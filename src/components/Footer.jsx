@@ -5,24 +5,24 @@ function Footer() {
   return (
     <footer>
       <div className="footer_element">
-        <em>{ATMName}</em>
         <img
           className="footer_img"
           src="./img/geolocation.png"
           alt="Geolocation_png"
         />
+        <em>{ATMName}</em>
       </div>
       <div className="footer_element">
-        <em>{informationName}</em>
         <img className="footer_img" src="./img/info.png" alt="info.png" />
+        <em>{informationName}</em>
       </div>
       <div className="footer_element">
-        <em>{scheduleName}</em>
         <img
           className="footer_img"
           src="./img/schedule.png"
           alt="schedule_png"
         />
+        <em>{scheduleName}</em>
       </div>
     </footer>
   );

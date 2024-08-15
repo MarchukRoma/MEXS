@@ -1,9 +1,13 @@
 function OwnerInfo() {
-  const ownerName = "Owner Nave";
+  const ownerName = "Owner Name";
   return (
     <>
-      <img id="ownerImg" src="./img/owner.png" alt="Owner" />
-      <p>{ownerName}✅</p>
+      <img id="ownerImg" src="./img/owner.png" alt="ownerImg" />
+      <p id="ownerName">
+        {ownerName}
+        <img id="tick" src="./img/tick.png" alt="tick" />
+      </p>
+
       {/* <img src="./img/golden_tick.png" alt="Logo" /> */}
     </>
   );

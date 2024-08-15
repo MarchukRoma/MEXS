@@ -15,11 +15,17 @@ function Main() {
   //   const handleInputChange = (event) => {
   //     setCurrensyAmount(event.target.value);
   //   };
+  const inputStyle = {
+    width: "70vh",
+    height: "20px",
+    fontSize: "12px",
+  };
 
   return (
     <div>
       <p>{nameForInput}</p>
       <input
+        style={inputStyle}
         type="text"
         value={inputAmount}
         onChange={(e) => setInputAmount(e.target.value)}
@@ -27,6 +33,7 @@ function Main() {
 
       <p>{nameForCurrency}</p>
       <input
+        style={inputStyle}
         type="text"
         value={currencyAmount}
         onChange={(e) => setCurrencyAmount(e.target.value)}
@@ -34,6 +41,7 @@ function Main() {
 
       <p>{nameAccountNumber}</p>
       <input
+        style={inputStyle}
         type="text"
         value={accountNumber}
         onChange={(e) => setAccountNumber(e.target.value)}
