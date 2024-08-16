@@ -1,7 +1,7 @@
 function OwnerInfo() {
   const ownerName = "Owner Name";
   return (
-    <>
+    <div style={{ marginBottom: "10px" }}>
       <img id="ownerImg" src="owner.png" alt="ownerImg" />
       <p id="ownerName">
         {ownerName}
@@ -9,7 +9,7 @@ function OwnerInfo() {
       </p>
 
       {/* <img src="./img/golden_tick.png" alt="Logo" /> */}
-    </>
+    </div>
   );
 }
 export default OwnerInfo;

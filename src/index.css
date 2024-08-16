@@ -17,39 +17,6 @@
   padding: 0;
   box-sizing: inherit;
 }
-.app {
-  width: 300px;
-  display: flex;
-  align-items: center; /* Вирівнювання по вертикалі */
-  flex-direction: column;
-  height: 100vh; /* Або іншої висоти батьківського контейнера */
-
-  margin-left: 50%;
-}
-#ownerImg {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-#headerImg {
-  width: 100%;
-}
-#ownerName {
-  display: flex;
-  flex-direction: row;
-}
-
-#tick {
-  height: 25px;
-}
-
-#submit_Btn {
-  margin-top: 20px;
-  background-color: #646cff;
-  color: white;
-  margin-bottom: 10px;
-}
 
 /* input {
   width: "3000px";
@@ -80,10 +47,10 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0, 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  /* min-width: 320px; */
   min-height: 100vh;
 }
 
@@ -129,21 +96,94 @@ footer {
   display: flex;
   justify-content: flex-start;
 }
+
+.app {
+  width: 300px;
+  display: flex;
+  align-items: center; /* Вирівнювання по вертикалі */
+  flex-direction: column;
+  height: 100vh; /* Або іншої висоти батьківського контейнера */
+}
+#ownerImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#headerImg {
+  width: 100%;
+}
+#ownerName {
+  display: flex;
+  flex-direction: row;
+}
+
+#tick {
+  height: 25px;
+}
+
+#submit_Btn {
+  margin-top: 20px;
+  background-color: #646cff;
+  color: white;
+  margin-left: 12%;
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around; /* Вирівнює блоки зображення та тексту по горизонталі */
+  padding: 20px;
+  background-color: #f8f8f8; /* Наприклад, фон для footer */
+}
+
 .footer_element {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Центрує зображення та текст по горизонталі */
 }
 
-/* 
-.Foote {
-  display: inline-block;
-  margin-right: 1000px; 
-}
-
-.footer_element {
-}
-*/
 .footer_img {
+  margin-bottom: 10px; /* Додає відступ між зображенням і текстом */
+  /* height: auto; Зберігає пропорції зображення */
   width: 50px;
   height: 50px;
+}
+
+.footer_element p {
+  color: blue;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* Внутрішні відступи для тексту всередині інпуту */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #aaa;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+input:focus + .input-label,
+input:not(:placeholder-shown) + .input-label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #333;
+  background-color: white;
+  padding: 0 5px;
 }

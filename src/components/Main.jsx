@@ -11,42 +11,44 @@ function Main() {
   const [currencyAmount, setCurrencyAmount] = useState("");
   const [accountNumber, setAccountNumber] = useState("");
 
-  // Обробник змін введеного тексту
-  //   const handleInputChange = (event) => {
-  //     setCurrensyAmount(event.target.value);
-  //   };
-  const inputStyle = {
-    width: "20vh",
-    height: "20px",
-    fontSize: "12px",
-  };
-
   return (
     <div>
-      <p>{nameForInput}</p>
-      <input
-        style={inputStyle}
-        type="text"
-        value={inputAmount}
-        onChange={(e) => setInputAmount(e.target.value)}
-      />
+      <div className="input-container">
+        <input
+          type="text"
+          placeholder=" "
+          id="input-field"
+          onChange={(e) => setInputAmount(e.target.value)}
+        />
+        <label htmlFor="input-field" className="input-label">
+          {nameForInput}
+        </label>
+      </div>
 
-      <p>{nameForCurrency}</p>
-      <input
-        style={inputStyle}
-        type="text"
-        value={currencyAmount}
-        onChange={(e) => setCurrencyAmount(e.target.value)}
-      />
+      <div className="input-container">
+        <input
+          type="text"
+          placeholder=" "
+          id="input-field"
+          onChange={(e) => setCurrencyAmount(e.target.value)}
+        />
+        <label htmlFor="input-field" className="input-label">
+          {nameForCurrency}
+        </label>
+      </div>
 
-      <p>{nameAccountNumber}</p>
-      <input
-        style={inputStyle}
-        type="text"
-        value={accountNumber}
-        onChange={(e) => setAccountNumber(e.target.value)}
-      />
-      <br />
+      <div className="input-container">
+        <input
+          type="text"
+          placeholder=" "
+          id="input-field"
+          onChange={(e) => setAccountNumber(e.target.value)}
+        />
+        <label htmlFor="input-field" className="input-label">
+          {nameAccountNumber}
+        </label>
+      </div>
+
       <button id="submit_Btn">{withdrawalName}</button>
     </div>
   );
