@@ -5,7 +5,7 @@ function OwnerInfo() {
       <img id="ownerImg" src="owner.png" alt="ownerImg" />
 
       <h1 id="ownerName">
-        {ownerName}
+        <em style={{ color: "black" }}>{ownerName}</em>
         <img id="tick" src="tick.png" alt="tick" />
       </h1>
 

@@ -15,6 +15,7 @@ function Main() {
     <>
       <div className="input-container">
         <input
+          style={{ color: "black" }}
           value={inputAmount}
           type="text"
           placeholder=" "
@@ -28,6 +29,7 @@ function Main() {
 
       <div className="input-container">
         <input
+          style={{ color: "black" }}
           value={currencyAmount}
           type="text"
           placeholder=" "
@@ -41,6 +43,7 @@ function Main() {
 
       <div className="input-container">
         <input
+          style={{ color: "black" }}
           value={accountNumber}
           type="text"
           placeholder=" "
