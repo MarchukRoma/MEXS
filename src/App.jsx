@@ -9,6 +9,7 @@ function App() {
       <Header />
       <OwnerInfo />
       <Main />
+
       <Footer />
     </div>
   );

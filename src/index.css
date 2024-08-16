@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  background-color: white;
 }
 
 /* input {
@@ -98,7 +99,7 @@ footer {
 }
 
 .app {
-  width: 300px;
+  width: 100%;
   display: flex;
   align-items: center; /* Вирівнювання по вертикалі */
   flex-direction: column;
@@ -112,6 +113,7 @@ footer {
 
 #headerImg {
   width: 100%;
+  /* max-width: 300px; */
 }
 #ownerName {
   display: flex;
@@ -126,7 +128,9 @@ footer {
   margin-top: 20px;
   background-color: #646cff;
   color: white;
-  margin-left: 12%;
+  margin-left: "10px";
+
+  margin-right: "10px";
   margin-bottom: 10px;
 }
 
@@ -134,7 +138,7 @@ footer {
   display: flex;
   justify-content: space-around; /* Вирівнює блоки зображення та тексту по горизонталі */
   padding: 20px;
-  background-color: #f8f8f8; /* Наприклад, фон для footer */
+  /* background-color: #f8f8f8; Наприклад, фон для footer */
 }
 
 .footer_element {
@@ -155,13 +159,16 @@ footer {
 }
 
 .input-container {
+  /* max-width: 70; */
+  margin-left: 50px;
+
   position: relative;
   width: 100%;
   margin-top: 20px;
 }
 
 input {
-  width: 100%;
+  width: 85%;
   padding: 10px 10px 10px 40px; /* Внутрішні відступи для тексту всередині інпуту */
   font-size: 16px;
   box-sizing: border-box;

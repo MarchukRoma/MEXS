@@ -12,7 +12,7 @@ function Main() {
   const [accountNumber, setAccountNumber] = useState("");
 
   return (
-    <div>
+    <>
       <div className="input-container">
         <input
           type="text"
@@ -50,7 +50,7 @@ function Main() {
       </div>
 
       <button id="submit_Btn">{withdrawalName}</button>
-    </div>
+    </>
   );
 }
 export default Main;
