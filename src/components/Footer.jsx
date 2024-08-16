@@ -13,7 +13,7 @@ function Footer() {
         <em>{ATMName}</em>
       </div>
       <div className="footer_element">
-        <img className="footer_img" src="./img/info.png" alt="info.png" />
+        <img className="footer_img" src="../img/info.png" alt="info.png" />
         <em>{informationName}</em>
       </div>
       <div className="footer_element">

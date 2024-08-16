@@ -16,7 +16,7 @@ function Main() {
   //     setCurrensyAmount(event.target.value);
   //   };
   const inputStyle = {
-    width: "70vh",
+    width: "20vh",
     height: "20px",
     fontSize: "12px",
   };
@@ -46,8 +46,8 @@ function Main() {
         value={accountNumber}
         onChange={(e) => setAccountNumber(e.target.value)}
       />
-
-      <button className="submit_Btn">{withdrawalName}</button>
+      <br />
+      <button id="submit_Btn">{withdrawalName}</button>
     </div>
   );
 }
