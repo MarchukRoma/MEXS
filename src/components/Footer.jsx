@@ -7,21 +7,17 @@ function Footer() {
       <div className="footer_element">
         <img
           className="footer_img"
-          src="./img/geolocation.png"
+          src="geolocation.png"
           alt="Geolocation_png"
         />
         <em>{ATMName}</em>
       </div>
       <div className="footer_element">
-        <img className="footer_img" src="../img/info.png" alt="info.png" />
+        <img className="footer_img" src="info.png" alt="info.png" />
         <em>{informationName}</em>
       </div>
       <div className="footer_element">
-        <img
-          className="footer_img"
-          src="./img/schedule.png"
-          alt="schedule_png"
-        />
+        <img className="footer_img" src="schedule.png" alt="schedule_png" />
         <em>{scheduleName}</em>
       </div>
     </footer>
