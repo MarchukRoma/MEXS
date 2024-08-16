@@ -1,5 +1,5 @@
 function Footer() {
-  const ATMName = "Cajeros automáticos";
+  // const ATMName = "Cajeros automáticos";
   const informationName = "Іnformación";
   const scheduleName = "horario";
   return (
@@ -10,7 +10,10 @@ function Footer() {
           src="geolocation.png"
           alt="Geolocation_png"
         />
-        <p>{ATMName.replace(/ /g, "\n")}</p>
+        <p>
+          Cajeros
+          <br /> automáticos
+        </p>
       </div>
       <div className="footer_element">
         <img className="footer_img" src="info.png" alt="info.png" />
