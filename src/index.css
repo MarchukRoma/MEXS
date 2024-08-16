@@ -106,8 +106,8 @@ footer {
   height: 100vh; /* Або іншої висоти батьківського контейнера */
 }
 #ownerImg {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
 }
 
