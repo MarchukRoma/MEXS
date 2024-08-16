@@ -15,6 +15,7 @@ function Main() {
     <>
       <div className="input-container">
         <input
+          value={inputAmount}
           type="text"
           placeholder=" "
           id="input-field"
@@ -27,6 +28,7 @@ function Main() {
 
       <div className="input-container">
         <input
+          value={currencyAmount}
           type="text"
           placeholder=" "
           id="input-field"
@@ -39,6 +41,7 @@ function Main() {
 
       <div className="input-container">
         <input
+          value={accountNumber}
           type="text"
           placeholder=" "
           id="input-field"
