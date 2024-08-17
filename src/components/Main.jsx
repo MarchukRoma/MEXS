@@ -96,7 +96,7 @@ function Main({
           {nameForInput}
         </label>
       </div>
-      {/*       dkjflsjdkfljsdlfkjsdlkfjsd */}
+
       <div className="input-container">
         <input
           style={{ color: "black" }}
@@ -117,8 +117,6 @@ function Main({
           />
         </div>
       </div>
-
-      {/* djlfkksdjfklsjdfkljsd */}
 
       <div className="input-container">
         <input
