@@ -123,7 +123,7 @@ function Main({
           style={{ color: "black" }}
           value={accountNumber}
           type="text"
-          placeholder=" "
+          placeholder=""
           id="input-field"
           onChange={(e) => setAccountNumber(e.target.value)}
         />
