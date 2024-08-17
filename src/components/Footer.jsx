@@ -1,4 +1,18 @@
 function Footer({ geoLabel, infoLabel, scheduleLabel }) {
+  function GeoLabel({ geoLabel }) {
+    // Розділяємо стрічку на слова
+    const words = geoLabel.split(" ");
+
+    return (
+      <div>
+        {words.map((word, index) => (
+          <p key={index} style={{ margin: 0, textAlign: "center" }}>
+            {word}
+          </p>
+        ))}
+      </div>
+    );
+  }
   // const ATMName = "Cajeros automáticos";
 
   return (
@@ -9,7 +23,7 @@ function Footer({ geoLabel, infoLabel, scheduleLabel }) {
           src="geolocation.png"
           alt="Geolocation_png"
         />
-        <p>{geoLabel}</p>
+        <GeoLabel geoLabel={geoLabel} />
       </div>
       <div className="footer_element">
         <img className="footer_img" src="info.png" alt="info.png" />
