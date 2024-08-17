@@ -12,7 +12,11 @@
 // }
 
 function Header() {
-  return <img id="headerImg" src="fullHeader.png" alt="header" />;
+  return (
+    <div>
+      <img id="headerImg" src="fullHeader.png" alt="header" />;
+    </div>
+  );
 }
 
 export default Header;

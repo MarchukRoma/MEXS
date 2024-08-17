@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import OwnerInfo from "./components/OwnerInfo";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import { useState } from "react";
 
 const UILabels = [
   {
@@ -20,6 +21,8 @@ const UILabels = [
 ];
 
 function App() {
+  const [currentCountry, setCurrentCountry] = useState(0);
+
   return (
     <div className="app">
       <Header />
