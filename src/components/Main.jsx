@@ -22,10 +22,10 @@ function Main({
     setShowForm(false);
   };
 
-  const handleOkClick = () => {
-    setShowForm(false);
-    // setMessage("");
-  };
+  // const handleOkClick = () => {
+  //   setShowForm(false);
+  //   // setMessage("");
+  // };
 
   const overlayStyle = {
     position: "fixed",
@@ -50,15 +50,49 @@ function Main({
     width: "300px",
   };
 
+  // const closeButtonStyle = {
+  //   color: "blue",
+  //   position: "absolute",
+  //   top: "10px",
+  //   right: "10px",
+  //   cursor: "pointer",
+  //   fontSize: "20px",
+  //   fontWeight: "bold",
+  // };
+
   const closeButtonStyle = {
     color: "blue",
+    backgroundColor: "lightblue", // Світло-синій колір фону
     position: "absolute",
-    top: "10px",
-    right: "10px",
+    top: "7px",
+    right: "7px",
     cursor: "pointer",
-    fontSize: "20px",
+    fontSize: "16px",
     fontWeight: "bold",
+    borderRadius: "50%", // Кругла форма
+    width: "18px", // Ширина та висота для створення кола
+    height: "18px",
+    display: "flex", // Центрування хрестика всередині
+    // alignItems: "center",
+    justifyContent: "center",
+    lineHeight: "1", // Для правильного відображення хрестика
   };
+
+  // const closeButtonStyle = {
+  //   color: "blue",
+  //   backgroundColor: "lightblue", // Світло-синій колір фону
+  //   position: "absolute",
+  //   top: "10px",
+  //   right: "10px",
+  //   cursor: "pointer",
+  //   // fontSize: "20px",
+  //   fontWeight: "bold",
+  //   borderRadius: "50%", // Кругла форма
+  //   padding: "10px", // Відступи для створення кола
+  //   display: "flex", // Для центрування тексту всередині
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  // };
 
   const contentStyle = {
     display: "flex",
@@ -132,7 +166,15 @@ function Main({
               &times;
             </div>
             <div style={contentStyle}>
-              <span style={iconStyle}>⚠️</span>
+              <span>
+                <img
+                  style={iconStyle}
+                  src="attention.png"
+                  alt="attention"
+                  width={25}
+                  height={25}
+                />
+              </span>
               <span style={textStyle}>{clickMessage}</span>{" "}
               {/* Додаємо стиль */}
             </div>
