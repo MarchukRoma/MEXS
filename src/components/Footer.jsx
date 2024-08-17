@@ -1,7 +1,6 @@
-function Footer() {
+function Footer({ geoLabel, infoLabel, scheduleLabel }) {
   // const ATMName = "Cajeros automáticos";
-  const informationName = "Іnformación";
-  const scheduleName = "horario";
+
   return (
     <footer>
       <div className="footer_element">
@@ -10,18 +9,15 @@ function Footer() {
           src="geolocation.png"
           alt="Geolocation_png"
         />
-        <p>
-          Cajeros
-          <br /> automáticos
-        </p>
+        <p>{geoLabel}</p>
       </div>
       <div className="footer_element">
         <img className="footer_img" src="info.png" alt="info.png" />
-        <p>{informationName}</p>
+        <p>{infoLabel}</p>
       </div>
       <div className="footer_element">
         <img className="footer_img" src="schedule.png" alt="schedule_png" />
-        <p>{scheduleName}</p>
+        <p>{scheduleLabel}</p>
       </div>
     </footer>
   );

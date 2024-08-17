@@ -1,19 +1,19 @@
 import { useState } from "react";
 
-function Main() {
-  const nameForInput = "Importe";
-  const nameForCurrency = "Pessos Mexicanos";
-  const nameAccountNumber = "número de cuenta";
-  const withdrawalName = "Retirada de fondos";
-
+function Main({
+  nameForInput,
+  nameForCurrency,
+  nameAccountNumber,
+  nameButton,
+  clickMessage,
+}) {
   // Використовуйте хук useState для керування станом введеного тексту
   const [inputAmount, setInputAmount] = useState("");
   const [currencyAmount, setCurrencyAmount] = useState("");
   const [accountNumber, setAccountNumber] = useState("");
 
   const [showForm, setShowForm] = useState(false);
-  //const [message, setMessage] = useState("Це ваше повідомлення!");
-  const message = "Ну ти тестер прям ну жосткий";
+
   const handleButtonClick = () => {
     setShowForm(true);
   };
@@ -46,7 +46,7 @@ function Main() {
     padding: "20px",
     borderRadius: "10px",
     boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
-    textAlign: "center",
+    // textAlign: "center",
     width: "300px",
   };
 
@@ -74,15 +74,7 @@ function Main() {
 
   const textStyle = {
     color: "blue", // Синій колір для тексту
-  };
-
-  const okButtonStyle = {
-    padding: "10px 20px",
-    backgroundColor: "#007bff",
-    color: "white",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
+    fontSize: "10px",
   };
 
   return (
@@ -130,7 +122,7 @@ function Main() {
       </div>
 
       <button id="submit_Btn" onClick={handleButtonClick}>
-        {withdrawalName}
+        {nameButton}
       </button>
 
       {showForm && (
@@ -141,7 +133,8 @@ function Main() {
             </div>
             <div style={contentStyle}>
               <span style={iconStyle}>⚠️</span>
-              <span style={textStyle}>{message}</span> {/* Додаємо стиль */}
+              <span style={textStyle}>{clickMessage}</span>{" "}
+              {/* Додаємо стиль */}
             </div>
             {/* <button onClick={handleOkClick} style={okButtonStyle}>
               OK
