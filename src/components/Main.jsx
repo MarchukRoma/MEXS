@@ -96,20 +96,29 @@ function Main({
           {nameForInput}
         </label>
       </div>
-
+      {/*       dkjflsjdkfljsdlfkjsdlkfjsd */}
       <div className="input-container">
         <input
           style={{ color: "black" }}
           value={currencyAmount}
           type="text"
-          placeholder=" "
+          placeholder=""
           id="input-field"
           onChange={(e) => setCurrencyAmount(e.target.value)}
         />
         <label htmlFor="input-field" className="input-label">
           {nameForCurrency}
         </label>
+        <div className="flag-container">
+          <img
+            src="mexico2.png" /* Заміни на реальний шлях до зображення */
+            alt="Spanish Flag"
+            className="flag-image"
+          />
+        </div>
       </div>
+
+      {/* djlfkksdjfklsjdfkljsd */}
 
       <div className="input-container">
         <input

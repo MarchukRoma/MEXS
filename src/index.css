@@ -132,9 +132,9 @@ h1 {
   font-size: 24px;
 }
 
-input {
+/* input {
   width: 85%;
-  padding: 10px 10px 10px 10px; /* Внутрішні відступи для тексту всередині інпуту */
+  padding: 10px 10px 10px 10px; 
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -153,11 +153,59 @@ input {
 input:focus + .input-label,
 input:not(:placeholder-shown) + .input-label {
   top: -13px;
-  /* left: 10px; */
+  left: 10px; 
   font-size: 12px;
   color: #333;
   background-color: white;
   padding: 0 5px;
+} */
+
+.input-container {
+  position: relative;
+  width: 85%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-right: 50px; /* Щоб залишити місце для зображення */
+}
+
+.input-label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #aaa;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+input:focus + .input-label,
+input:not(:placeholder-shown) + .input-label {
+  top: -13px;
+  font-size: 12px;
+  color: #333;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.flag-container {
+  position: absolute;
+  right: 5px; /* Можна змінити за потреби */
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  overflow: hidden; /* Щоб зображення не виходило за межі контейнера */
+}
+
+.flag-image {
+  width: 30px; /* Розмір зображення, можна змінити */
+  height: 30px; /* Розмір зображення, можна змінити */
+  /* object-fit: cover;  */
 }
 
 #submit_Btn {
