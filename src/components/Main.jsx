@@ -22,11 +22,6 @@ function Main({
     setShowForm(false);
   };
 
-  // const handleOkClick = () => {
-  //   setShowForm(false);
-  //   // setMessage("");
-  // };
-
   const overlayStyle = {
     position: "fixed",
     top: 0,
@@ -50,18 +45,8 @@ function Main({
     width: "300px",
   };
 
-  // const closeButtonStyle = {
-  //   color: "blue",
-  //   position: "absolute",
-  //   top: "10px",
-  //   right: "10px",
-  //   cursor: "pointer",
-  //   fontSize: "20px",
-  //   fontWeight: "bold",
-  // };
-
   const closeButtonStyle = {
-    color: "blue",
+    color: "#005baa",
     backgroundColor: "lightblue", // Світло-синій колір фону
     position: "absolute",
     top: "7px",
@@ -78,27 +63,12 @@ function Main({
     lineHeight: "1", // Для правильного відображення хрестика
   };
 
-  // const closeButtonStyle = {
-  //   color: "blue",
-  //   backgroundColor: "lightblue", // Світло-синій колір фону
-  //   position: "absolute",
-  //   top: "10px",
-  //   right: "10px",
-  //   cursor: "pointer",
-  //   // fontSize: "20px",
-  //   fontWeight: "bold",
-  //   borderRadius: "50%", // Кругла форма
-  //   padding: "10px", // Відступи для створення кола
-  //   display: "flex", // Для центрування тексту всередині
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  // };
-
   const contentStyle = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: "20px",
+    marginBottom: "10px",
+    marginTop: "10px",
   };
 
   const iconStyle = {
@@ -107,7 +77,7 @@ function Main({
   };
 
   const textStyle = {
-    color: "blue", // Синій колір для тексту
+    color: "#005baa", // Синій колір для тексту
     fontSize: "10px",
   };
 
@@ -118,7 +88,7 @@ function Main({
           style={{ color: "black" }}
           value={inputAmount}
           type="text"
-          placeholder=" "
+          placeholder=""
           id="input-field"
           onChange={(e) => setInputAmount(e.target.value)}
         />
