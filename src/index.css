@@ -64,12 +64,6 @@ button:focus-visible {
   }
 }
 
-footer {
-  gap: 45px;
-  display: flex;
-  justify-content: flex-start;
-}
-
 .app {
   width: 100%;
   display: flex;
@@ -96,11 +90,19 @@ footer {
   height: 25px;
 }
 
-footer {
+.foot {
   display: flex;
   justify-content: space-around; /* Вирівнює блоки зображення та тексту по горизонталі */
   padding: 20px;
   /* background-color: #f8f8f8; Наприклад, фон для footer */
+  background-color: white;
+  gap: 45px;
+  /* padding-left: 25%; */
+
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  /* justify-content: flex-start; */
 }
 
 .footer_element {

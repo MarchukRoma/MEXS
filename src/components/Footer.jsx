@@ -16,7 +16,7 @@ function Footer({ geoLabel, infoLabel, scheduleLabel }) {
   // const ATMName = "Cajeros automáticos";
 
   return (
-    <footer>
+    <div className="foot">
       <div className="footer_element">
         <img
           className="footer_img"
@@ -33,7 +33,7 @@ function Footer({ geoLabel, infoLabel, scheduleLabel }) {
         <img className="footer_img" src="schedule.png" alt="schedule_png" />
         <p>{scheduleLabel}</p>
       </div>
-    </footer>
+    </div>
   );
 }
 
