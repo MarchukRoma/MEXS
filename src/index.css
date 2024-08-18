@@ -167,8 +167,9 @@ input:not(:placeholder-shown) + .input-label {
 
 input {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  padding: 15px;
+
+  font-size: 20px;
   box-sizing: border-box;
   padding-right: 50px; /* Щоб залишити місце для зображення */
 }
@@ -186,8 +187,8 @@ input {
 
 input:focus + .input-label,
 input:not(:placeholder-shown) + .input-label {
-  top: -13px;
-  font-size: 12px;
+  top: -17px;
+  font-size: 17px;
   color: #333;
   background-color: white;
   padding: 0 5px;

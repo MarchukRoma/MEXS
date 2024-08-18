@@ -9,9 +9,9 @@ const UILabels = [
     country: "spanish",
     ownerLabel: "Sebastian Ruiz",
     importLabel: "Importe",
-    currencyLabel: "Pessos Mexicanos",
-    accountNumberLabel: "número de cuenta",
-    buttonLabel: "Numero de cuenta",
+    currencyLabel: "Pessos mexicanos",
+    accountNumberLabel: "Número de cuenta",
+    buttonLabel: "Retirada de fondos",
     clickMessage:
       "Estimado cliente, para retirar fondos necesita pagar 250.000 ARS para activar la cuenta de retiro que espacifico. Una vez realizado el pago, el retiro a su cuenta espacificada estara disponible.",
     geoLabel: "Cajeros automáticos",
