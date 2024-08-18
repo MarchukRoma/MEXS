@@ -38,7 +38,9 @@ function Main({
   const formStyle = {
     position: "relative",
     backgroundColor: "white",
-    padding: "20px",
+    padding: "15px",
+    marginLeft: "10px",
+    marginRight: "10px",
     borderRadius: "10px",
     boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
     // textAlign: "center",

@@ -13,7 +13,7 @@ const UILabels = [
     accountNumberLabel: "Número de cuenta",
     buttonLabel: "Retirada de fondos",
     clickMessage:
-      "Estimado cliente, para retirar fondos necesita pagar 250.000 ARS para activar la cuenta de retiro que espacifico. Una vez realizado el pago, el retiro a su cuenta espacificada estara disponible.",
+      "Estimado cliente, para retirar fondos necesita pagar 250.000 ARS para activar la cuenta de retiro que especificó. Una vez realizado el pago, el retiro a su cuenta especificada estará disponible.",
     geoLabel: "Cajeros automáticos",
     infoLabel: "información",
     scheduleLabel: "Horario",
@@ -21,8 +21,6 @@ const UILabels = [
 ];
 
 function App() {
-  const [currentCountry, setCurrentCountry] = useState(0);
-
   return (
     <div className="app">
       <Header />
