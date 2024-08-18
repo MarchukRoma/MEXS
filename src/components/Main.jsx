@@ -72,7 +72,7 @@ function Main({
   };
 
   const iconStyle = {
-    fontSize: "24px",
+    // fontSize: "24px",
     marginRight: "10px",
   };
 
