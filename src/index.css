@@ -138,6 +138,7 @@ h1 {
 }
 
 input {
+  margin-top: 5px;
   width: 100%;
   padding: 15px;
   padding-left: 25px;
@@ -159,7 +160,7 @@ input {
 
 input:focus + .input-label,
 input:not(:placeholder-shown) + .input-label {
-  top: -17px;
+  top: -10px;
   font-size: 17px;
   color: #333;
   background-color: white;
@@ -192,7 +193,7 @@ input:not(:placeholder-shown) + .input-label {
   font-size: 16px; */
 
   /*fsdifjsdifjsd*/
-  margin-top: 50px;
+  margin-top: 30px;
   width: 85%;
   padding: 15px;
   margin-left: 25px;
