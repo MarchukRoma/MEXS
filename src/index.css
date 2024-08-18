@@ -93,7 +93,8 @@ button:focus-visible {
 .foot {
   display: flex;
   /* justify-content: space-around; Вирівнює блоки зображення та тексту по горизонталі */
-  padding: 20px;
+  padding: 0;
+  padding-top: 40px;
   /* background-color: #f8f8f8; Наприклад, фон для footer */
   background-color: white;
   gap: 60px;
