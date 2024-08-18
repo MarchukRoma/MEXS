@@ -172,6 +172,7 @@ input:not(:placeholder-shown) + .input-label {
 .flag-container {
   position: absolute;
   right: 5px; /* Можна змінити за потреби */
+  margin-top: 4px;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
