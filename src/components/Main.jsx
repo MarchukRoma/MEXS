@@ -39,13 +39,13 @@ function Main({
   const formStyle = {
     position: "relative",
     backgroundColor: "white",
-    padding: "10px",
-    marginLeft: "4px",
-    marginRight: "4px",
+    padding: "15px",
+    marginLeft: "6px",
+    marginRight: "6px",
     borderRadius: "10px",
     boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
     // textAlign: "center",
-    width: "300px",
+    width: "85%",
   };
 
   const closeButtonStyle = {
