@@ -7,7 +7,7 @@ function handleClick(current, setCurrent) {
 function Header({ current, setCurrent }) {
   return (
     <div onClick={() => handleClick(current, setCurrent)}>
-      <img id="headerImg" src="fullHeader.png" alt="header" />;
+      <img id="headerImg" src="fullHeader.png" alt="header" />
     </div>
   );
 }
