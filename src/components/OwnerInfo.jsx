@@ -1,7 +1,7 @@
-function OwnerInfo({ ownerName }) {
+function OwnerInfo({ ownerName, current }) {
   return (
     <>
-      <img id="ownerImg" src="owner.png" alt="ownerImg" />
+      <img id="ownerImg" src={`owner${current}.png`} alt="ownerImg" />
 
       <h1 id="ownerName">
         <h1 style={{ color: "black" }}>{ownerName}</h1>

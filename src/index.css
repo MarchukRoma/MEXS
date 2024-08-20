@@ -67,6 +67,7 @@ button:focus-visible {
 .app {
   width: 100%;
   display: flex;
+  /* justify-content: center; */
   align-items: center; /* Вирівнювання по вертикалі */
   flex-direction: column;
   height: 100vh; /* Або іншої висоти батьківського контейнера */
@@ -79,7 +80,6 @@ button:focus-visible {
 
 #headerImg {
   width: 100%;
-  /* max-width: 500px; */
 }
 #ownerName {
   display: flex;

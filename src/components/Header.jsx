@@ -1,19 +1,12 @@
-// function Header() {
-//   const style = {
-//     marginTop: "5vh", // Правильний формат значення
-//   };
-//   const companyName = "MEXCGlobal";
-//   return (
-//     <div style={style}>
-//       <img src="./img/company.png" alt="company_icon" />
-//       <em>{companyName}</em>
-//     </div>
-//   );
-// }
+function handleClick(current, setCurrent) {
+  if (current === 0) setCurrent(1);
+  if (current === 1) setCurrent(2);
+  if (current === 2) setCurrent(0);
+}
 
-function Header() {
+function Header({ current, setCurrent }) {
   return (
-    <div>
+    <div onClick={() => handleClick(current, setCurrent)}>
       <img id="headerImg" src="fullHeader.png" alt="header" />;
     </div>
   );

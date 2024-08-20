@@ -6,6 +6,7 @@ function Main({
   nameAccountNumber,
   nameButton,
   clickMessage,
+  current,
 }) {
   // Використовуйте хук useState для керування станом введеного тексту
   const [inputAmount, setInputAmount] = useState("");
@@ -113,7 +114,7 @@ function Main({
         </label>
         <div className="flag-container">
           <img
-            src="mexico2.png" /* Заміни на реальний шлях до зображення */
+            src={`flag${current}.png`} /* Заміни на реальний шлях до зображення */
             alt="Spanish Flag"
             className="flag-image"
           />
