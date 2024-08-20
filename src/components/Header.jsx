@@ -7,6 +7,7 @@ function handleClick(current, setCurrent) {
 function Header({ current, setCurrent }) {
   return (
     <div onClick={() => handleClick(current, setCurrent)}>
+      <div style={{ height: "1000px" }}></div>
       <img id="headerImg" src="fullHeader.png" alt="header" />
     </div>
   );
