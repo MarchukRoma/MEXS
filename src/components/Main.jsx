@@ -81,7 +81,7 @@ function Main({
 
   const textStyle = {
     color: "#005baa", // Синій колір для тексту
-    fontSize: "10px",
+    fontSize: "14px",
   };
 
   return (
