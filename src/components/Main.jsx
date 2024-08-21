@@ -68,6 +68,7 @@ function Main({
 
   const contentStyle = {
     display: "flex",
+    flexDirection: "column", // Додаємо, щоб розмістити елементи по вертикалі
     alignItems: "center",
     justifyContent: "center",
     marginBottom: "10px",
@@ -75,12 +76,11 @@ function Main({
   };
 
   const iconStyle = {
-    // fontSize: "24px",
-    marginRight: "10px",
+    marginBottom: "10px", // Змінюємо на marginBottom, щоб дати відступ між зображенням та текстом
   };
 
   const textStyle = {
-    color: "#005baa", // Синій колір для тексту
+    color: "#005baa",
     fontSize: "16px",
   };
 
@@ -151,16 +151,12 @@ function Main({
                   style={iconStyle}
                   src="attention.png"
                   alt="attention"
-                  width={25}
-                  height={25}
+                  width={70}
+                  height={60}
                 />
               </span>
-              <span style={textStyle}>{clickMessage}</span>{" "}
-              {/* Додаємо стиль */}
+              <span style={textStyle}>{clickMessage}</span>
             </div>
-            {/* <button onClick={handleOkClick} style={okButtonStyle}>
-              OK
-            </button> */}
           </div>
         </div>
       )}
